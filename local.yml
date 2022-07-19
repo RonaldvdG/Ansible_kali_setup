@@ -1,4 +1,5 @@
-- hosts: all
+- hosts: localhost
+  connection: local
   tasks:
     - name: Distribution;
       debug: msg="{{ ansible_distribution }}"
