@@ -2,6 +2,7 @@
 
 - hosts: localhost
   connection: local
+  python_interpreter: python
   become: true
   roles:
     - base
