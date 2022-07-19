@@ -3,6 +3,10 @@
   tasks:
     - name: Distribution;
       debug: msg="{{ ansible_distribution }}"
+  roles:
+    - base
+    - users
+    - software
 
 
 #- hosts: all
