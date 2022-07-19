@@ -1,0 +1,10 @@
+---
+
+- hosts: localhost
+  connection: local
+  become: false
+  roles:
+    - base
+    - users
+    - software
+  when: ansible_distribution == "Kali" and ansible_os_family == "Debian"
